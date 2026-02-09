@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #edf2f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .register-card {
+      background: #fff;
+      padding: 25px;
+      width: 100%;
+      max-width: 420px;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    h2 {
+      text-align: center;
+      color: #2b6cb0;
+      margin-bottom: 15px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #2b6cb0;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    p {
+      text-align: center;
+      margin-top: 12px;
+    }
+
+    a {
+      color: #2b6cb0;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="register-card">
+  <h2>Create Account</h2>
+
+  <input type="text" placeholder="Full Name" required>
+  <input type="email" placeholder="Email" required>
+  <input type="password" placeholder="Password" required>
+  <input type="password" placeholder="Confirm Password" required>
+
+  <select>
+    <option>Select Role</option>
+    <option>Doctor</option>
+    <option>Clinic Staff</option>
+    <option>Admin</option>
+  </select>
+  <script src="assets/js/auth.js"></script>
+<button onclick="registerUser()">Register</button>
+
+
+  <p>Already have an account? <a href="login.html">Login</a></p>
+</div>
+
+</body>
+</html>

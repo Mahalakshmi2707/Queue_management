@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Queue System</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/sidebar.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+    }
+
+    header {
+      background: #2b6cb0;
+      color: #fff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 15px;
+      font-weight: bold;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      padding: 40px;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .hero-text h1 {
+      font-size: 2.2rem;
+      color: #2b6cb0;
+    }
+
+    .hero-text p {
+      font-size: 1.1rem;
+      margin: 15px 0;
+    }
+
+    .hero-text button {
+      padding: 12px 20px;
+      border: none;
+      background: #2b6cb0;
+      color: #fff;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    .hero img {
+      width: 100%;
+      max-height: 280px;
+      object-fit: contain;
+    }
+
+    .features {
+      padding: 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .feature-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    }
+
+    .feature-card h3 {
+      color: #2b6cb0;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #e2e8f0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h2>Digital Queue</h2>
+  <div>
+    <a href="login.html">Login</a>
+    <a href="register.html">Register</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Smart & Elderly-Friendly Clinic Queue System</h1>
+    <p>
+      Reduce waiting time, manage appointments, and improve patient experience
+      with offline support and reminders.
+    </p>
+    <button onclick="location.href='login.html'">Login</button>
+    <button onclick="location.href='register.html'">Register</button>
+  </div>
+
+  <img src="https://cdn-icons-png.flaticon.com/512/2920/2920349.png" alt="Queue Illustration">
+</section>
+<div class="role-buttons">
+    <a href="login.html?role=patient" class="btn">👤 Patient</a>
+    <a href="login.html?role=doctor" class="btn">👨‍⚕️ Doctor</a>
+    <a href="login.html?role=admin" class="btn">🛠 Admin</a>
+  </div>
+
+<section class="features">
+  <div class="feature-card">
+    <h3>Offline Token</h3>
+    <p>Create tokens even without internet and sync later.</p>
+  </div>
+  <div class="feature-card">
+    <h3>Elderly Friendly</h3>
+    <p>Simple UI with icons and minimal steps.</p>
+  </div>
+  <div class="feature-card">
+    <h3>Notifications</h3>
+    <p>Appointment reminders sent in advance.</p>
+  </div>
+  <div class="feature-card">
+    <h3>Doctor Dashboard</h3>
+    <p>Live queue, patient history, and analytics.</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Digital Queue System
+</footer>
+
+</body>
+</html>
